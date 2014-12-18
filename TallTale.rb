@@ -33,3 +33,52 @@ print "Would you like to hear an interesting story? (y/n)\n\n: "
 
 answer = STDIN.gets
 answer.chop!
+
+if answer == "n"
+Console_Screen.cls
+puts "Okay. Hope to see you soon. \n\n"
+else
+
+Story = Tale.new 
+
+Console_Screen.cls
+
+print %Q{Type the name of something that you consider to be a monster. (Press Enter)\n\n: }
+monster = STDIN.gets
+monster.chomp!
+
+Console_Screen.cls 
+
+print %Q{Who is your favourite movie star? (Press Enter)\n\n: }
+villain = STDIN.gets
+villain.chomp!
+
+Console_Screen.cls 
+
+print %Q{Type the name of something. (Press Enter)\n\n: }
+object = STDIN.gets
+object.chomp!
+
+Console_Screen.cls 
+
+print %Q{Name a decent hiding place. (Press Enter)\n\n: }
+place = STDIN.gets
+place.chomp!
+
+Console_Screen.cls 
+
+print %Q{Enter a popular holiday location. (Press Enter)\n\n: }
+location = STDIN.gets 
+location.chomp! 
+
+
+
+
+
+
+
+
+
+
+
+end
