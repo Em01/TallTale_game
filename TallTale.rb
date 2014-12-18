@@ -18,9 +18,18 @@ class Tale
 #what will be used to store the paragraphs that make up the story
 
 	attr_accessor :P1, :P2, :P3, :P4
-	
+
 #method which displays any text that its passed to it as an argument
 	def tell_Story(paragraph)
 		puts paragraph
 	end
 end
+
+Console_Screen = Screen.new
+
+Console_Screen.cls 
+
+print "Would you like to hear an interesting story? (y/n)\n\n: "
+
+answer = STDIN.gets
+answer.chop!
