@@ -69,8 +69,25 @@ Console_Screen.cls
 
 print %Q{Enter a popular holiday location. (Press Enter)\n\n: }
 location = STDIN.gets 
-location.chomp! 
+location.chomp!
 
+Story.P1 = %Q{ Once upon a time in a land far awar which was just on the outskirts of #{location},
+	there lived three brave young children called Alex, Charlie and Eddie. These children were known as heroes
+	because they had saved the people of #{location}. (Press Enter)
+}
+
+Story.P2 = %Q{ The good people of #{location} had been drived into the hills but the were not the only ones. A naughty
+monster named #{villain} had recently awoken from its slumber. (Press Enter)
+}
+
+Story.P3 = %Q{ The local inhabitants of #{location} sent word to the children that their help was going to be needed
+again. When the children arrived to help they found that #{villain} had trapped the locals inside #{place} they were
+afraid he was hungry and wanted one last meal before returning to his secret lair in #{location} (Press Enter)
+}
+
+Story.P4 = %Q{ The children flew straight into action. Alex threw #{object} and hit #{villain} the rest of the children also
+helped and eventually everyone lived happily ever after. (Press Enter)
+}
 
 
 
